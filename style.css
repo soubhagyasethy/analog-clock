@@ -60,9 +60,10 @@ body {
     border-radius: 50%;
 
 }
+
 /* style the hands */
 .clock .hand {
-    --rotation: 0;
+    /* --rotation: 0; */
     position: absolute;
     bottom: 50%;
     left: 50%;
@@ -70,7 +71,8 @@ body {
     border: 1px solid white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    /* transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg)); */
+    transform-origin: bottom;
 }
 
 .clock .hand.second {
